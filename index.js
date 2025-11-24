@@ -3,6 +3,8 @@ import { menuArray } from "./data.js";
 let orderedItems = [];
 const menuDiv = document.getElementById("menu-item-info");
 const orderReceipt = document.querySelector(".receipt")
+const orderBtn = document.getElementById("complete-order-button");
+const modal = document.getElementById('modal')
 
 
 function renderMenu() {
@@ -70,3 +72,7 @@ function removeItem(index) {
 }
 
 renderMenu();
+
+orderBtn.addEventListener("click", () => {
+   modal.style.display = 'inline' 
+})

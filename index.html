@@ -28,9 +28,41 @@
       <div id="order-receipt" class="receipt">
         <h2 class="order-header">Your Order</h2>
         <div id="order-items"></div>
-        <hr class="order-line">
+        <hr class="order-line" />
         <div class="order-total"></div>
-        <button class="complete-order-button" id="complete-order-button">Complete Order</button>
+        <button class="complete-order-button" id="complete-order-button">
+          Complete Order
+        </button>
+      </div>
+      <div class="modal" id="modal">
+        <h3 class="card-details-title">Enter card details</h3>
+        <form id="customer-form">
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="tel"
+            id="cardNumber"
+            name="cardNumber"
+            pattern="\d{4}-?\d{4}-?\d{4}-?\d{4}"
+            maxlength="19"
+            placeholder="Enter card number"
+            required
+          />
+          <input
+            type="tel"
+            id="cvv"
+            name="cvv"
+            pattern="\d{3,4}"
+            maxlength="4"
+            placeholder="Enter CVV"
+            required
+          />
+          <button class="pay-btn">Pay</button>
+        </form>
       </div>
     </main>
     <script src="index.js" type="module"></script>
