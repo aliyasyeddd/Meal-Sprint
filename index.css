@@ -33,3 +33,40 @@ header img {
   font-size: 1.401rem;
 }
 
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-item-image {
+  width: 75px;
+  height: 89px;
+}
+
+.menu-items-details > .menu-item-ingredients {
+  margin-top: 5px;
+  color: gray;
+} 
+
+.add-btn {
+  width: 50pX;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #E8E8E8;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #E8E8E8;
+}
