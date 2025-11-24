@@ -52,9 +52,31 @@ header img {
   height: 89px;
 }
 
-.menu-items-details > .menu-item-ingredients {
-  margin-top: 5px;
+
+h3 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu-items-details * {
+  line-height: 1.1;  
+}
+
+.menu-items-details h3 {
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+
+.menu-item-ingredients {
+  margin-bottom: 10px;
   color: gray;
+  font-size: 20px;
 } 
 
 .add-btn {
@@ -69,4 +91,65 @@ header img {
 hr {
   border: none;
   border-top: 1px solid #E8E8E8;
+}
+
+
+.receipt {
+  display: none;
+  width: 510px;
+  margin: 0px auto;
+}
+
+.order-header {
+  text-align: center;
+}
+
+.ordered-item {
+  display: flex;
+  align-items: center;
+}
+
+.ordered-item h3,
+.ordered-items-list p {
+  margin: 0;
+}
+
+
+
+.ordered-items-list {
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.remove-btn {
+  border: none;
+  background-color: white;
+  color: #BBBBBB;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+.order-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-line {
+  margin-top: 10px;
+  border-top: 4px solid #383838;
+}
+
+.complete-order-button {
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #16DB99;
+  height: 60px;
+  width: 508px;
+  cursor: pointer;
 }
