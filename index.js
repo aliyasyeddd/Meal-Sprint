@@ -1,6 +1,8 @@
 import { menuArray } from "./data.js";
 
 let orderedItems = [];
+
+// DOM elements
 const menuDiv = document.getElementById("menu-item-info");
 const orderReceipt = document.querySelector(".receipt")
 const orderBtn = document.getElementById("complete-order-button");
@@ -74,7 +76,6 @@ function removeItem(index) {
     if (hasItems) renderOrderReceipt();
 }
 
-renderMenu();
 
 orderBtn.addEventListener("click", () => {
    modal.style.display = 'inline' 
@@ -96,3 +97,6 @@ payBtn.addEventListener("click", (e) => {
     thankYouMessage.innerHTML = `
     <p class="thank-you-text">Thanks ${customerName} ❤️!, Your order is on its way!</p>`;
 });
+
+
+renderMenu();
