@@ -4,7 +4,10 @@ let orderedItems = [];
 const menuDiv = document.getElementById("menu-item-info");
 const orderReceipt = document.querySelector(".receipt")
 const orderBtn = document.getElementById("complete-order-button");
-const modal = document.getElementById('modal')
+const modal = document.getElementById('modal');
+const form = document.getElementById('customer-form');
+const payBtn = document.getElementById("pay-btn");
+const thankYouMessage = document.getElementById("thank-you-msg");
 
 
 function renderMenu() {
@@ -76,3 +79,20 @@ renderMenu();
 orderBtn.addEventListener("click", () => {
    modal.style.display = 'inline' 
 })
+
+
+
+payBtn.addEventListener("click", (e) => {
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+    e.preventDefault();
+    const formData = new FormData(form);
+    const customerName = formData.get("fullName");
+    modal.style.display = 'none';
+    orderReceipt.style.display = "none";
+    thankYouMessage.style.display = 'block';
+    thankYouMessage.innerHTML = `
+    <p class="thank-you-text">Thanks ${customerName} ❤️!, Your order is on its way!</p>`;
+});
