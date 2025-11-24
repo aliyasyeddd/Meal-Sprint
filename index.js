@@ -64,12 +64,9 @@ function renderOrderReceipt() {
 
 function removeItem(index) {
     orderedItems.splice(index, 1);
-    if(orderedItems.length > 0){
-        orderReceipt.style.display = "block";
-        renderOrderReceipt();
-    } else {
-        orderReceipt.style.display = "none";
-    }
+    const hasItems = orderedItems.length > 0;
+    orderReceipt.style.display = hasItems ? "block" : "none";
+    if (hasItems) renderOrderReceipt();
 }
 
 renderMenu();
