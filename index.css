@@ -1,3 +1,35 @@
 body {
-    margin: 0;
-} 
+  margin: 0px auto;
+  width: 600px;
+  font-family: "Smythe", system-ui;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+header {
+  position: relative;
+  text-align: left;
+}
+
+header img {
+  height: 167px;
+}
+
+
+.restaurant-name {
+  position: absolute;
+  top: 28px;
+  left: 35px;
+  color: white;
+  font-size: 2rem;
+}
+
+.restaurant-tagline {
+  position: absolute;
+  top: 55px;
+  left: 35px;
+  margin-top: 32px; 
+  color: white;
+  font-size: 1.401rem;
+}
+
