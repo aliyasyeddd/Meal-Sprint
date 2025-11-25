@@ -42,11 +42,6 @@ This project focuses on **DOM manipulation**, **events**, **state management**, 
 - Updating UI instantly with `innerHTML`  
 - Creating a modal without frameworks   
 
-
-
-> Concepts practiced include:  
-> 
-
 ---
 
 ## 🌿 Lessons Learned  
