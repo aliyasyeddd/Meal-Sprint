@@ -4,19 +4,20 @@
 ---
 
 ## 🪞 Overview  
-Meal Sprint is a beginner-friendly and fully responsive ordering interface designed to mimic real restaurant ordering systems.  
-It aims to make the food-ordering journey smooth and modern.  
-This project is perfect for learners who want hands-on experience with UI design, DOM manipulation, and building real-world web features.
+Meal Sprint allows users to browse food items, add them to an order, remove items, view total price, complete payment through a modal, and receive a thank-you message.  
+This project focuses on **DOM manipulation**, **events**, **state management**, and **form validation**.
 
 ---
 
 ## 🚀 Features  
-*(Will be updated as features are added)*  
-
-- 🎯 Feature 1  
-- 🧠 Feature 2  
-- 📱 Feature 3  
-- 🌙 Feature 4  
+ 
+- 🍕 Dynamic menu rendering from `data.js`  
+- ➕ Add items to the order  
+- ❌ Remove items instantly  
+- 🧮 Auto-calculated total price  
+- 💳 Payment modal with HTML form  
+- ✔️ Built-in form validation  
+- 🎉 Personalized thank-you message after payment  
 
 ---
 
@@ -27,11 +28,19 @@ This project is perfect for learners who want hands-on experience with UI design
 | **HTML5** | App structure |
 | **CSS3** | Styling & layout |
 | **JavaScript (ES6)** | Logic & interactivity |
-| *(Optional)* **API / React / Backend** | To be added later |
+
 
 ---
 
-## 📚 What We Have Studied  
+## 📚 What We Have Studied
+- Rendering UI dynamically using JavaScript  
+- Working with DOM events (`click`, `submit`)  
+- Managing state with arrays (`orderedItems`)  
+- Using `dataset` attributes for element IDs  
+- Reading form data using `FormData()`  
+- HTML5 form validation in JavaScript  
+- Updating UI instantly with `innerHTML`  
+- Creating a modal without frameworks   
 
 
 
@@ -42,9 +51,11 @@ This project is perfect for learners who want hands-on experience with UI design
 
 ## 🌿 Lessons Learned  
 
-- Improved DOM manipulation skills  
-- Better event & state management understanding  
-- Experience writing modular, clean code  
+- How to build a project without frameworks
+- How to manage UI state using arrays
+- How to maintain clean, modular code
+- Importance of validation before submission
+- Writing human-friendly UI messages 
 
 ---
 
