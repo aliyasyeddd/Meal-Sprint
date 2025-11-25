@@ -63,6 +63,6 @@ This project focuses on **DOM manipulation**, **events**, **state management**, 
 ---
 
 ## 💫 Author  
-👩‍💻 **Created by Aliya**  
+👩‍💻 **Created by @aliyasyeddd**  
 > _“Build. Break. Learn. Repeat.”_ 🌸  
 
